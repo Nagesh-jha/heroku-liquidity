@@ -30,7 +30,7 @@ exports.login = async (req, res) => {
       });
     } else {
       return res.json({
-        success: -1,
+        success: 0,
         message: "Unathorised user, Please enter valid email and password !",
         data: result
       });
