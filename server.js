@@ -44,9 +44,9 @@ mongoose
 
 const apiRoutes = require('./routes/api-routes');
 app.use("/api", apiRoutes);
-app.use(express.static(path.join(__dirname,'public')))
+app.use(express.static(path.join(__dirname,'public/dist')))
 app.get('*', (req,res)=>{
-  res.sendFile(path.join(__dirname,'public/index.html'))
+  res.sendFile(path.join(__dirname,'public/dist/index.html'))
 })
 // Launch app to listen to specified port
 var server = app.listen(port, function() {

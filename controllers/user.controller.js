@@ -100,7 +100,7 @@ exports.createUser = async (req, res) => {
     } else {
       return res.json({
         success: -1,
-        message: "Email already exist, Please enter unique email_id."
+        message: "Email "+ req.body.email+ " already exist, Please enter unique email_id!"
       });
     }
   }
