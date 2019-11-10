@@ -88,7 +88,7 @@ exports.createUser = async (req, res) => {
     console.log(result);
     return res.json({
       success: 0,
-      message: "User created Successfully!",
+      message: "User created Successfully. Cheers !!!",
       data: result
     });
   } catch (err) {
